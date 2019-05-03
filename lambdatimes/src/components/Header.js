@@ -4,7 +4,7 @@ import styled from "styled-components";
 // Refactor this component to use styled components and not classNames. 
 // You can find the corresponding CSS in the CSS/index.css file
 
-export const Header = styled.div`
+export const HeaderStyled = styled.div`
 display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,7 +36,7 @@ export const Span = styled.span`
   letter-spacing: 1px;
   `;
  
-export const Date = style(Span)`
+export const Date = styled(Span)`
   margin-left: 25px;
   flex: 1;
   `;
@@ -48,11 +48,11 @@ export const Temp = styled(Span)`
 
 const Header = () => {
   return (
-    <Header>
+    <HeaderStyled>
       <Date>SMARCH 32, 2018</Date>
       <h1>Lambda Times</h1>
       <Temp>98°</Temp>
-    </Header>
+    </HeaderStyled>
   )
 }
 
